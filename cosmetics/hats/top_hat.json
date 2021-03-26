@@ -1,9 +1,9 @@
 {
 	"credit": "vattentoppen(hat)",
 	"textures": {
-		"0": "minecraft:textures/block/black_wool",
-		"1": "minecraft:textures/block/red_wool",
-		"particle": "minecraft:textures/block/black_wool"
+		"0": "minecraft:block/black_wool",
+		"1": "minecraft:block/red_wool",
+		"particle": "minecraft:block/black_wool"
 	},
 	"elements": [
 		{
