@@ -1,4 +1,5 @@
+//RyanLand
 {
-  "cape": null,
+  "cape": "ryanland_cape.png",
   "hat": "top_hat.json"
 }
