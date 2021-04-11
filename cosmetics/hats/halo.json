@@ -61,5 +61,8 @@
 		"head": {
 			"translation": [0, 18, 0]
 		}
+	},
+	"attributes": {
+		"type": "body"
 	}
 }
