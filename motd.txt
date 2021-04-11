@@ -1,1 +1,1 @@
-§aCodeUtilities 2.2.0 has been released!
+CodeUtilities 2.2.0 has been released!
