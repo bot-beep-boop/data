@@ -1,0 +1,64 @@
+{
+	"credit": "partey ha'",
+	"textures": {
+		"0": "minecraft:block/fire_coral_block",
+		"1": "minecraft:block/brain_coral_block",
+		"particle": "minecraft:block/fire_coral_block"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 7, 16],
+			"faces": {
+				"north": {"uv": [7, 13, 16, 16], "texture": "#1"},
+				"east": {"uv": [7, 3, 16, 6], "texture": "#1"},
+				"south": {"uv": [3, 3, 12, 6], "texture": "#1"},
+				"west": {"uv": [6, 9, 15, 12], "texture": "#1"},
+				"up": {"uv": [6, 5, 14, 13], "texture": "#1"},
+				"down": {"uv": [6, 5, 14, 13], "texture": "#1"}
+			}
+		},
+		{
+			"from": [3, 7, 3],
+			"to": [13, 14, 13],
+			"faces": {
+				"north": {"uv": [2, 10, 8, 14], "texture": "#0"},
+				"east": {"uv": [9, 8, 15, 12], "texture": "#0"},
+				"south": {"uv": [10, 0, 16, 4], "texture": "#0"},
+				"west": {"uv": [7, 7, 13, 11], "texture": "#0"},
+				"up": {"uv": [10, 6, 15, 11], "texture": "#0"},
+				"down": {"uv": [2, 1, 7, 6], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 14, 5],
+			"to": [11, 21, 11],
+			"faces": {
+				"north": {"uv": [2, 10, 6, 15], "texture": "#1"},
+				"east": {"uv": [12, 0, 16, 5], "texture": "#1"},
+				"south": {"uv": [7, 5, 11, 10], "texture": "#1"},
+				"west": {"uv": [3, 1, 7, 6], "texture": "#1"},
+				"up": {"uv": [10, 6, 13, 9], "texture": "#1"},
+				"down": {"uv": [4, 10, 7, 13], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7, 21, 7],
+			"to": [9, 26, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 5], "texture": "#0"},
+				"east": {"uv": [0, 0, 2, 5], "texture": "#0"},
+				"south": {"uv": [0, 0, 2, 5], "texture": "#0"},
+				"west": {"uv": [0, 0, 2, 5], "texture": "#0"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#0"},
+				"down": {"uv": [0, 0, 2, 2], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 10, 0],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}
