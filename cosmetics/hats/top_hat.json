@@ -47,5 +47,8 @@
 		"head": {
 			"translation": [0, 14, 0]
 		}
+	},
+	"attributes": {
+		"type": "head"
 	}
 }
