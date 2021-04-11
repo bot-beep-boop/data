@@ -1,8 +1,8 @@
 {
 	"credit": "halo lol vattendroppem made it btw",
 	"textures": {
-		"0": "minecraft:block/gold_block.png",
-		"particle": "minecraft:block/gold_block.png"
+		"0": "minecraft:block/gold_block",
+		"particle": "minecraft:block/gold_block"
 	},
 	"elements": [
 		{
