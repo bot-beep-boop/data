@@ -63,6 +63,6 @@
 		}
 	},
 	"attributes": {
-		"type": "body"
+		"type": "head"
 	}
 }
