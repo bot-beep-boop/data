@@ -1,0 +1,161 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "item/apple",
+		"1": "item/black_dye",
+		"particle": "item/apple"
+	},
+	"elements": [
+		{
+			"name": "Apple",
+			"from": [3, 0, 3],
+			"to": [13, 1, 13],
+			"faces": {
+				"north": {"uv": [3, 8, 13, 9], "texture": "#0"},
+				"east": {"uv": [3, 8, 13, 9], "texture": "#0"},
+				"south": {"uv": [3, 8, 13, 9], "texture": "#0"},
+				"west": {"uv": [3, 8, 13, 9], "texture": "#0"},
+				"up": {"uv": [4, 7, 11, 13], "texture": "#0"},
+				"down": {"uv": [4, 7, 11, 13], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Apple",
+			"from": [3, 0, 3],
+			"to": [13, 1, 13],
+			"faces": {
+				"north": {"uv": [3, 8, 13, 9], "texture": "#0"},
+				"east": {"uv": [3, 8, 13, 9], "texture": "#0"},
+				"south": {"uv": [3, 8, 13, 9], "texture": "#0"},
+				"west": {"uv": [3, 8, 13, 9], "texture": "#0"},
+				"up": {"uv": [4, 7, 11, 13], "texture": "#0"},
+				"down": {"uv": [4, 7, 11, 13], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Apple",
+			"from": [3, 11, 3],
+			"to": [13, 12, 13],
+			"faces": {
+				"north": {"uv": [3, 8, 13, 9], "texture": "#0"},
+				"east": {"uv": [3, 8, 13, 9], "texture": "#0"},
+				"south": {"uv": [3, 8, 13, 9], "texture": "#0"},
+				"west": {"uv": [3, 8, 13, 9], "texture": "#0"},
+				"up": {"uv": [4, 7, 11, 13], "texture": "#0"},
+				"down": {"uv": [4, 7, 11, 13], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Apple",
+			"from": [2, 1, 2],
+			"to": [14, 11, 14],
+			"faces": {
+				"north": {"uv": [4, 7, 11, 13], "texture": "#0"},
+				"east": {"uv": [4, 7, 11, 13], "texture": "#0"},
+				"south": {"uv": [4, 7, 11, 13], "texture": "#0"},
+				"west": {"uv": [4, 7, 11, 13], "texture": "#0"},
+				"up": {"uv": [4, 7, 11, 13], "texture": "#0"},
+				"down": {"uv": [4, 7, 11, 13], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Apple",
+			"from": [7, 12, 7],
+			"to": [9, 16, 9],
+			"faces": {
+				"north": {"uv": [8, 2, 9, 4], "texture": "#0"},
+				"east": {"uv": [8, 2, 9, 4], "texture": "#0"},
+				"south": {"uv": [8, 2, 9, 4], "texture": "#0"},
+				"west": {"uv": [8, 2, 9, 4], "texture": "#0"},
+				"up": {"uv": [8, 2, 9, 3], "texture": "#0"},
+				"down": {"uv": [8, 3, 9, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Apple",
+			"from": [5, 14, 7],
+			"to": [7, 18, 9],
+			"faces": {
+				"north": {"uv": [9, 1, 10, 3], "texture": "#0"},
+				"east": {"uv": [9, 1, 10, 3], "texture": "#0"},
+				"south": {"uv": [9, 1, 10, 3], "texture": "#0"},
+				"west": {"uv": [9, 1, 10, 3], "texture": "#0"},
+				"up": {"uv": [9, 1, 10, 2], "texture": "#0"},
+				"down": {"uv": [9, 2, 10, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Face",
+			"from": [10, 7, 1],
+			"to": [12, 9, 2],
+			"faces": {
+				"north": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"east": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"south": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"west": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"up": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"down": {"uv": [6, 11, 7, 12], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Face",
+			"from": [4, 4, 1],
+			"to": [12, 6, 2],
+			"faces": {
+				"north": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"east": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"south": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"west": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"up": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"down": {"uv": [6, 11, 7, 12], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Face",
+			"from": [4, 7, 1],
+			"to": [6, 9, 2],
+			"faces": {
+				"north": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"east": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"south": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"west": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"up": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"down": {"uv": [6, 11, 7, 12], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Face",
+			"from": [4, 2, 1],
+			"to": [6, 4, 2],
+			"faces": {
+				"north": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"east": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"south": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"west": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"up": {"uv": [6, 11, 7, 12], "texture": "#1"},
+				"down": {"uv": [6, 11, 7, 12], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 2.75, 0],
+			"scale": [1.3, 1.3, 1.3]
+		}
+	},
+	"groups": [
+		{
+			"name": "Apple",
+			"origin": [0, 0, 0],
+			"children": [0, 1, 2, 3, 4, 5]
+		},
+		{
+			"name": "Face",
+			"origin": [0, 0, 0],
+			"children": [6, 7, 8, 9]
+		}
+	],
+	"attributes": {
+		"type": "head"
+	}
+}
