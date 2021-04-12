@@ -1,5 +1,5 @@
 {
-	"credit": "Made with Blockbench",
+	"credit": "Model based on TouhouLittleMaid mod",
 	"texture_size": [128, 128],
 	"textures": {
 		"0": "block/red_mushroom_block",
