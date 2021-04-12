@@ -9,9 +9,9 @@
 	"elements": [
 		{
 			"name": "headdressLeftTop",
-			"from": [10.8, -1.4, 19.2],
-			"to": [22, 5.6, 20.6],
-			"rotation": {"angle": 22.5, "axis": "z", "origin": [-3.2, 0, -3.2]},
+			"from": [11.02836, -0.25195, 19.2],
+			"to": [22.22836, 6.74805, 20.6],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [0, 0, 0]},
 			"faces": {
 				"north": {"uv": [3.375, 3, 0, 5], "texture": "#0"},
 				"east": {"uv": [3.125, 3, 3.25, 5], "texture": "#0"},
@@ -23,9 +23,9 @@
 		},
 		{
 			"name": "headdressRightTop",
-			"from": [-8.1, 7, 19.2],
-			"to": [3.1, 14, 20.6],
-			"rotation": {"angle": -22.5, "axis": "z", "origin": [-3.2, 0, -3.2]},
+			"from": [-7.87164, 5.85195, 19.2],
+			"to": [3.32836, 12.85195, 20.6],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [0, 0, 0]},
 			"faces": {
 				"north": {"uv": [0, 3, 3.375, 5], "texture": "#0"},
 				"east": {"uv": [2, 3.25, 2.125, 3.875], "texture": "#0"},
@@ -37,9 +37,9 @@
 		},
 		{
 			"name": "headdressLeftBottom",
-			"from": [-0.75, -7, 19.2],
-			"to": [4.85, 9.8, 20.6],
-			"rotation": {"angle": -22.5, "axis": "z", "origin": [-3.2, 0, -3.2]},
+			"from": [-0.52164, -8.14805, 19.2],
+			"to": [5.07836, 8.65195, 20.6],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [0, 0, 0]},
 			"faces": {
 				"north": {"uv": [3, 0, 5, 3.25], "texture": "#0"},
 				"east": {"uv": [4, 0, 5, 3.25], "texture": "#0"},
@@ -51,9 +51,9 @@
 		},
 		{
 			"name": "headdressRightBottom",
-			"from": [9.05, -15.4, 19.2],
-			"to": [14.65, 1.4, 20.6],
-			"rotation": {"angle": 22.5, "axis": "z", "origin": [-3.2, 0, -3.2]},
+			"from": [9.27836, -14.25195, 19.2],
+			"to": [14.87836, 2.54805, 20.6],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [0, 0, 0]},
 			"faces": {
 				"north": {"uv": [3, 0, 5, 3.25], "texture": "#0"},
 				"east": {"uv": [4, 0, 5, 3.25], "texture": "#0"},
@@ -67,7 +67,6 @@
 			"name": "headdressMiddle",
 			"from": [5.2, 4.9, 17.8],
 			"to": [10.8, 11.9, 22],
-			"rotation": {"angle": 0, "axis": "y", "origin": [-3.2, 0, -3.2]},
 			"faces": {
 				"north": {"uv": [0, 0, 6, 8], "texture": "#1"},
 				"east": {"uv": [6, 0, 12, 8], "texture": "#1"},
