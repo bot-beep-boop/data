@@ -1,3 +1,6 @@
+//touhou contents should always be safe from that "removing hat" movement
+//so i have rights to keep these :)
+
 {
   "cape": "kabanfriends_cape_fumo.png",
   "hat": "reimu.json"
