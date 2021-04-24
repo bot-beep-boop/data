@@ -108,5 +108,8 @@
 		"head": {
 			"scale": [1.4, 1.4, 1.4]
 		}
+	},
+	"attributes": {
+		"type": "head"
 	}
 }
