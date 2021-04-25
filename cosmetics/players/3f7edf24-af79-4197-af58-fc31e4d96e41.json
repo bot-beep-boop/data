@@ -1,5 +1,6 @@
 {
   "Player": "Owen1212055",
   "cape": "developer_cape.png",
-  "hat": "halo.json"
+  "hat": "halo.json",
+  "dev": "True"
 }
