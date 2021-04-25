@@ -1,5 +1,6 @@
 {
   "player": "Vatten",
   "cape": "developer_cape.png",
-  "hat": "top_hat.json"
+  "hat": "top_hat.json",
+  "dev": "True"
 }
