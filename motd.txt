@@ -1,2 +1,2 @@
-CodeUtilities 2.2.0 has been released! Get it here: https://codeutilities.github.io/
+CodeUtilities 2.2.1 has been released! Get it here: https://codeutilities.github.io/
 
