@@ -1,0 +1,162 @@
+    {
+        "TEXT": {
+            "id": "Text",
+            "color": "§b"
+        },
+        "NUMBER": {
+            "id": "Number",
+            "color": "§c"
+        },
+        "ITEM": {
+            "id": "Item",
+            "color": "§6"
+        },
+        "BLOCK": {
+            "id": "Block",
+            "color": "§6"
+        },
+        "LOCATION": {
+            "id": "Location",
+            "color": "§a"
+        },
+        "VECTOR": {
+            "id": "Vector",
+            "color": "§x§2§a§f§f§a§a"
+        },
+        "NONE": {
+            "id": "None",
+            "color": "§x§8§0§8§0§8§0"
+        },
+        "ENTITY_TYPE": {
+            "id": "Entity Type",
+            "color": "§6"
+        },
+        "BLOCK_TAG": {
+            "id": "Block Tag",
+            "color": "§b"
+        },
+        "VARIABLE": {
+            "id": "Variable",
+            "color": "§e"
+        },
+        "POTION": {
+            "id": "Potion",
+            "color": "§x§f§f§5§5§7§f"
+        },
+        "SOUND": {
+            "id": "Sound",
+            "color": "§9"
+        },
+        "PARTICLE": {
+            "id": "Particle",
+            "color": "§x§a§a§5§5§f§f"
+        },
+        "ANY_TYPE": {
+            "id": "Any Value",
+            "color": "§x§f§f§d§4§7§f"
+        },
+        "SPAWN_EGG": {
+            "id": "Spawn Egg",
+            "color": "§6"
+        },
+        "PROJECTILE": {
+            "id": "Projectile",
+            "color": "§6"
+        },
+        "LIST": {
+            "id": "List",
+            "color": "§2"
+        },
+        "VEHICLE": {
+            "id": "Vehicle",
+            "color": "§6"
+        },
+        "NOBLE": {
+            "id": "Noble",
+            "color": "§a"
+        },
+        "EMPEROR": {
+            "id": "Emperor",
+            "color": "§b"
+        },
+        "MYTHIC": {
+            "id": "Mythic",
+            "color": "§5"
+        },
+        "OVERLORD": {
+            "id": "Overlord",
+            "color": "§4"
+        },
+        "PLAYER_ACTION": {
+            "id": "Player Action",
+            "color": "§x§a§6§a§6§a§6"
+        },
+        "IF_PLAYER": {
+            "id": "If Player",
+            "color": "§x§c§c§6§d§0§0"
+        },
+        "CALL_FUNC": {
+            "id": "Call Function",
+            "color": "§x§0§0§9§d§f§f"
+        },
+        "FUNC": {
+            "id": "Function",
+            "color": "§x§0§0§4§4§f§f"
+        },
+        "ENTITY_EVENT": {
+            "id": "Entity Event",
+            "color": "§x§f§f§f§f§2§4"
+        },
+        "SET_VAR": {
+            "id": "Set Variable",
+            "color": "§f"
+        },
+        "IF_ENTITY": {
+            "id": "If Entity",
+            "color": "§x§d§1§6§f§8§8"
+        },
+        "ENTITY_ACTION": {
+            "id": "Entity Action",
+            "color": "§x§1§1§7§3§1§6"
+        },
+        "IF_VAR": {
+            "id": "If Variable",
+            "color": "§x§3§9§0§0§6§1"
+        },
+        "SELECT_OBJ": {
+            "id": "Select Object",
+            "color": "§x§f§f§7§5§d§a"
+        },
+        "EVENT": {
+            "id": "Player Event",
+            "color": "§x§0§0§f§f§f§2"
+        },
+        "GAME_ACTION": {
+            "id": "Game Action",
+            "color": "§x§d§9§0§0§0§0"
+        },
+        "ELSE": {
+            "id": "Else",
+            "color": "§x§f§f§f§b§b§0"
+        },
+        "START_PROCESS": {
+            "id": "Start Process",
+            "color": "§x§8§3§f§f§7§5"
+        },
+        "PROCESS": {
+            "id": "Process",
+            "color": "§x§1§3§b§8§0§0"
+        },
+        "CONTROL": {
+            "id": "Control",
+            "color": "§0"
+        },
+        "REPEAT": {
+            "id": "Repeat",
+            "color": "§x§3§e§a§d§9§4"
+        },
+        "IF_GAME": {
+            "id": "If Game",
+            "color": "§x§8§c§1§c§1§c"
+        }
+    }
