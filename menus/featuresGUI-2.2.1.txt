@@ -1,2 +1,22 @@
-§bCodeUtilities Features will be listed below
-§aComing soon!!
+§7･§6/edititem§f - Opens a menu to edit the held item.
+§7･§6/dfgive <item>§f - Gives you a specified item.
+§7･§6/itemdata§f - Shows the held item's (client-side) NBT data.
+§7･§6/templates§f - Shows recently used Code Templates.
+§7･§6/unpack§f - Extracts the contents in the held item (such as items in chests)
+§7･§6/webview§f - Views the held Code Template in your web browser.
+§7･§6/sendtemplate§f - Sends the held Code Template to connected third-party software.
+§7･§6/relativeloc <targer> <f> <u> <r> <rd> <rr>§f - Gives you the Relative Location item.
+
+§7･§6/nbs player§f - Gives you the Song Player functions Code Template.
+§7･§6/nbs load <filename>§f - Imports a Note Block Song (.nbs) to a Code Template
+§7» §fTo use the load command, place .nbs files in §b.minecraft/CodeUtilities/NBS Files§f.
+
+§7･§6/color rgb <r> <g> <b>§f - Creates a hex color code based on RGB values.
+§7･§6/color hex <hex-code>§f - Creates a hex color code based on hex values.
+§7･§6/color hsb <h> <s> <b>§f - Creates a hex color code based on HSB values.
+§7･§6/colors§f - Shows a simple hex color picker in the chat.
+§7･§6/gradient <startColor> <endColor> <text>§f - Shows a text colored in gradient.
+§7･§6/heads§f - Opens a menu to search and get custom heads.
+§7･§6/node <1|2|3|4|5|beta>§f - Sends you to the specified DiamondFire node.
+§7･§6/uuid <username>§f - Grabs the Text item with UUID of the specified player.
+§7･§6/plots§f - Opens the plots gui without using the item (must use item first to cache plots).
