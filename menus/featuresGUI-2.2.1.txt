@@ -9,7 +9,7 @@
 
 /nbs player - Gives you the Song Player functions Code Template.
 /nbs load <filename> - Imports a Note Block Song (.nbs) to a Code Template
-To use the load command, place .nbs files in §b.minecraft/CodeUtilities/NBS Files§f.
+To use the load command, place .nbs files in §8.minecraft/CodeUtilities/NBS Files§f.
 
 /color rgb <r> <g> <b> - Creates a hex color code based on RGB values.
 /color hex <hex-code> - Creates a hex color code based on hex values.
