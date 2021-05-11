@@ -1,0 +1,22 @@
+/edititem - Opens a menu to edit the held item.
+/dfgive <item> - Gives you a specified item.
+/itemdata - Shows the held item's (client-side) NBT data.
+/templates - Shows recently used Code Templates.
+/unpack - Extracts the contents in the held item (such as items in chests)
+/webview - Views the held Code Template in your web browser.
+/sendtemplate - Sends the held Code Template to connected third-party software.
+/relativeloc <targer> <f> <u> <r> <rd> <rr> - Gives you the Relative Location item.
+
+/nbs player - Gives you the Song Player functions Code Template.
+/nbs load <filename> - Imports a Note Block Song (.nbs) to a Code Template
+To use the load command, place .nbs files in §8.minecraft/CodeUtilities/NBS Files§f.
+
+/color rgb <r> <g> <b> - Creates a hex color code based on RGB values.
+/color hex <hex-code> - Creates a hex color code based on hex values.
+/color hsb <h> <s> <b> - Creates a hex color code based on HSB values.
+/colors - Shows a simple hex color picker in the chat.
+/gradient <startColor> <endColor> <text> - Shows a text colored in gradient.
+/heads - Opens a menu to search and get custom heads.
+/node <1|2|3|4|5|beta> - Sends you to the specified DiamondFire node.
+/uuid <username> - Grabs the Text item with UUID of the specified player.
+/plots - Opens the plots gui without using the item.
