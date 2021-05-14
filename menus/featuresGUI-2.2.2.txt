@@ -8,7 +8,7 @@
 third-party software.
 /relativeloc <targer> <f> <u> <r> <rd> <rr> - Gives you the Relative Location item.
 
-&lNBS Commands&r
+§lNBS Commands§r
 /nbs player - Gives you the Song Player functions Code Template.
 /nbs load <filename> - Imports a Note Block Song (.nbs) to a Code Template
 To use the load command, place .nbs files in §8.minecraft/CodeUtilities/NBS Files§f.
