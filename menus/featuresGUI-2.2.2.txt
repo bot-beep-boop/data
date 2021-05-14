@@ -6,7 +6,8 @@
 §l/§rwebview - Views the held Code Template in your web browser.
 §l/§rsendtemplate - Sends the held Code Template to connected 
 third-party software.
-§l/§rrelativeloc <targer> <f> <u> <r> <rd> <rr> - Gives you the Relative Location item.
+§l/§rrelativeloc <targer> <f> <u> <r> <rd> <rr> - Gives you a 
+Relative Location item.
 
 §l/§rnbs player - Gives you the Song Player functions Code Template.
 §l/§rnbs load <filename> - Imports a Note Block Song (.nbs) to a Code Template
