@@ -2647,20 +2647,61 @@
             ],
             "aliases": [],
             "icon": {
-                "material": "STONE",
-                "name": "",
+                "material": "LEAD",
+                "name": "&x&f&f&d&4&7&fGet Target Entity",
                 "deprecatedNote": [],
-                "description": [],
+                "description": [
+                    "Gets the entity a player is",
+                    "looking at."
+                ],
                 "example": [],
                 "worksWith": [],
-                "additionalInfo": [],
+                "additionalInfo": [
+                    [
+                        "Also detects players."
+                    ]
+                ],
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 1,
-                "arguments": []
+                "arguments": [
+                    {
+                        "type": "VARIABLE",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Gets the target",
+                            "entity UUID (or &b\"none\"&7)"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "VARIABLE",
+                        "plural": false,
+                        "optional": true,
+                        "description": [
+                            "Gets the hit (or",
+                            "end) location"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "NUMBER",
+                        "plural": false,
+                        "optional": true,
+                        "description": [
+                            "Limit of &c120&7"
+                        ],
+                        "notes": [
+                            [
+                                "Default = &c5&7"
+                            ]
+                        ]
+                    }
+                ]
             }
         },
         {
@@ -7640,12 +7681,7 @@
                 ],
                 "example": [],
                 "worksWith": [],
-                "additionalInfo": [
-                    [
-                        "Add &c24000&7 ticks to add",
-                        "one moon phase."
-                    ]
-                ],
+                "additionalInfo": [],
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
@@ -7658,7 +7694,8 @@
                         "plural": false,
                         "optional": false,
                         "description": [
-                            "Daylight ticks)"
+                            "Daylight time",
+                            "(&c0&7-&c24000&7 ticks)"
                         ],
                         "notes": [
                             [
@@ -14226,7 +14263,7 @@
                 "name": "&x&a&a&5&5&f&fSet Particle Effect Spread",
                 "deprecatedNote": [],
                 "description": [
-                    "Sets a particle effect's horizontal",
+                    "Gets a particle effect's horizontal",
                     "and vertical spread."
                 ],
                 "example": [],
@@ -15671,7 +15708,7 @@
             "tags": [],
             "aliases": [],
             "icon": {
-                "material": "PRISMARINE_WALL",
+                "material": "PRISMARINE_SHARD",
                 "name": "&x&2&a&f&f&a&aSet to Vector Between Locations",
                 "deprecatedNote": [],
                 "description": [
@@ -15684,7 +15721,7 @@
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 0,
                 "arguments": [
@@ -16792,168 +16829,30 @@
             }
         },
         {
-            "name": "Raycast",
+            "name": "MixColors",
             "codeblockName": "SET VARIABLE",
-            "tags": [
-                {
-                    "name": "Entity Collision",
-                    "options": [
-                        {
-                            "name": "True",
-                            "icon": {
-                                "material": "LIME_DYE",
-                                "name": "",
-                                "deprecatedNote": [],
-                                "description": [
-                                    "Collides with players",
-                                    "and entities."
-                                ],
-                                "example": [],
-                                "worksWith": [],
-                                "additionalInfo": [
-                                    [
-                                        "Starting a ray trace",
-                                        "inside an entity's hitbox",
-                                        "will hit that entity."
-                                    ]
-                                ],
-                                "requiredRank": "",
-                                "requireTokens": false,
-                                "requireRankAndTokens": false,
-                                "advanced": false,
-                                "loadedItem": ""
-                            },
-                            "aliases": []
-                        },
-                        {
-                            "name": "False",
-                            "icon": {
-                                "material": "RED_DYE",
-                                "name": "",
-                                "deprecatedNote": [],
-                                "description": [],
-                                "example": [],
-                                "worksWith": [],
-                                "additionalInfo": [],
-                                "requiredRank": "",
-                                "requireTokens": false,
-                                "requireRankAndTokens": false,
-                                "advanced": false,
-                                "loadedItem": ""
-                            },
-                            "aliases": []
-                        }
-                    ],
-                    "defaultOption": "False"
-                },
-                {
-                    "name": "Block Collision",
-                    "options": [
-                        {
-                            "name": "All blocks",
-                            "icon": {
-                                "material": "STONE_BRICKS",
-                                "name": "",
-                                "deprecatedNote": [],
-                                "description": [
-                                    "Passes through air only."
-                                ],
-                                "example": [],
-                                "worksWith": [],
-                                "additionalInfo": [],
-                                "requiredRank": "",
-                                "requireTokens": false,
-                                "requireRankAndTokens": false,
-                                "advanced": false,
-                                "loadedItem": ""
-                            },
-                            "aliases": []
-                        },
-                        {
-                            "name": "Non-fluid blocks",
-                            "icon": {
-                                "material": "WATER_BUCKET",
-                                "name": "",
-                                "deprecatedNote": [],
-                                "description": [
-                                    "Passes through fluids",
-                                    "(water and lava)."
-                                ],
-                                "example": [],
-                                "worksWith": [],
-                                "additionalInfo": [],
-                                "requiredRank": "",
-                                "requireTokens": false,
-                                "requireRankAndTokens": false,
-                                "advanced": false,
-                                "loadedItem": ""
-                            },
-                            "aliases": []
-                        },
-                        {
-                            "name": "Solid blocks",
-                            "icon": {
-                                "material": "TALL_GRASS",
-                                "name": "",
-                                "deprecatedNote": [],
-                                "description": [
-                                    "Passes through non-solid",
-                                    "blocks such as tall grass,",
-                                    "and through fluids."
-                                ],
-                                "example": [],
-                                "worksWith": [],
-                                "additionalInfo": [],
-                                "requiredRank": "",
-                                "requireTokens": false,
-                                "requireRankAndTokens": false,
-                                "advanced": false,
-                                "loadedItem": ""
-                            },
-                            "aliases": []
-                        },
-                        {
-                            "name": "None",
-                            "icon": {
-                                "material": "FEATHER",
-                                "name": "",
-                                "deprecatedNote": [],
-                                "description": [
-                                    "Passes through all blocks."
-                                ],
-                                "example": [],
-                                "worksWith": [],
-                                "additionalInfo": [],
-                                "requiredRank": "",
-                                "requireTokens": false,
-                                "requireRankAndTokens": false,
-                                "advanced": false,
-                                "loadedItem": ""
-                            },
-                            "aliases": []
-                        }
-                    ],
-                    "defaultOption": "All blocks"
-                }
-            ],
+            "tags": [],
             "aliases": [],
             "icon": {
-                "material": "SPECTRAL_ARROW",
-                "name": "&aRaycast from Location",
+                "material": "OXEYE_DAISY",
+                "name": "&bMix Colors",
                 "deprecatedNote": [],
                 "description": [
-                    "Ray traces from a location",
-                    "to the first intersection."
+                    "Mixes two or more colors into a",
+                    "new color."
                 ],
-                "example": [],
+                "example": [
+                    "&dMixColors&7(&b\"#FF0000\"&7, &b\"#FFFFFF\"&7) = ",
+                    "&b\"#FF8080\""
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
-                "tags": 2,
+                "tags": 0,
                 "arguments": [
                     {
                         "type": "VARIABLE",
@@ -16965,20 +16864,11 @@
                         "notes": []
                     },
                     {
-                        "type": "LOCATION",
-                        "plural": false,
+                        "type": "TEXT",
+                        "plural": true,
                         "optional": false,
                         "description": [
-                            "Ray origin"
-                        ],
-                        "notes": []
-                    },
-                    {
-                        "type": "NUMBER",
-                        "plural": false,
-                        "optional": false,
-                        "description": [
-                            "Ray distance"
+                            "Colors to mix"
                         ],
                         "notes": []
                     }
@@ -17047,7 +16937,7 @@
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 1,
                 "arguments": [
@@ -17109,7 +16999,7 @@
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 0,
                 "arguments": [
@@ -17154,7 +17044,7 @@
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 0,
                 "arguments": [
@@ -17213,7 +17103,9 @@
                     "Repeats a text the given number",
                     "of times."
                 ],
-                "example": [],
+                "example": [
+                    "&dRepeatText&7(&b\"abc\"&7&7, &c2&7&7) = &b\"abcabc\"&7"
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -17244,11 +17136,15 @@
                     {
                         "type": "NUMBER",
                         "plural": false,
-                        "optional": false,
+                        "optional": true,
                         "description": [
                             "Times to repeat"
                         ],
-                        "notes": []
+                        "notes": [
+                            [
+                                "Default = &c2&7"
+                            ]
+                        ]
                     }
                 ]
             }
@@ -17311,7 +17207,9 @@
                     "two bounds and if not, wraps",
                     "it around the farthest bound."
                 ],
-                "example": [],
+                "example": [
+                    "&dWrapNumber&7(&c-190&7&7, &c-180&7&7, &c180&7&7) = &c170&7"
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -17530,7 +17428,7 @@
             "tags": [],
             "aliases": [],
             "icon": {
-                "material": "WARPED_FENCE_GATE",
+                "material": "WARPED_FENCE",
                 "name": "&x&2&a&f&f&a&aSet to Cross Product",
                 "deprecatedNote": [],
                 "description": [
@@ -17543,7 +17441,7 @@
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 0,
                 "arguments": [
@@ -17662,7 +17560,7 @@
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 0,
                 "arguments": [
@@ -18004,55 +17902,6 @@
                         "optional": false,
                         "description": [
                             "Number input"
-                        ],
-                        "notes": []
-                    }
-                ]
-            }
-        },
-        {
-            "name": "DirectionName",
-            "codeblockName": "SET VARIABLE",
-            "tags": [],
-            "aliases": [],
-            "icon": {
-                "material": "NAME_TAG",
-                "name": "&bSet to Direction Name",
-                "deprecatedNote": [],
-                "description": [
-                    "Sets a variable to the name",
-                    "of the direction of a vector."
-                ],
-                "example": [],
-                "worksWith": [],
-                "additionalInfo": [
-                    [
-                        "Can return: &b\"north\"&7&7, &b\"east\"&7&7, ",
-                        "&b\"south\"&7&7, &b\"west\"&7&7, &b\"up\"&7&7, &b\"down\"&7"
-                    ]
-                ],
-                "requiredRank": "",
-                "requireTokens": false,
-                "requireRankAndTokens": false,
-                "advanced": false,
-                "loadedItem": "",
-                "tags": 0,
-                "arguments": [
-                    {
-                        "type": "VARIABLE",
-                        "plural": false,
-                        "optional": false,
-                        "description": [
-                            "Variable to set"
-                        ],
-                        "notes": []
-                    },
-                    {
-                        "type": "VECTOR",
-                        "plural": false,
-                        "optional": false,
-                        "description": [
-                            "Direction"
                         ],
                         "notes": []
                     }
@@ -18423,7 +18272,11 @@
                     "random number. Values closer to μ are",
                     "more likely to be chosen."
                 ],
-                "example": [],
+                "example": [
+                    "&7Using &fμ&7 = &c10&7 and &fσ&7 = &c2&7 will generate",
+                    "&7a random number between &c4&7 and &c16",
+                    "&7(&fμ - σ * 3&7 and &fμ + σ * 3&7)."
+                ],
                 "worksWith": [],
                 "additionalInfo": [
                     [
@@ -18525,12 +18378,11 @@
             "tags": [],
             "aliases": [],
             "icon": {
-                "material": "NETHER_SPROUTS",
+                "material": "PRISMARINE_BRICKS",
                 "name": "&x&2&a&f&f&a&aAlign Vector",
                 "deprecatedNote": [],
                 "description": [
-                    "Aligns a vector to the",
-                    "nearest axis."
+                    "Aligns a vector to the nearest axis."
                 ],
                 "example": [],
                 "worksWith": [],
@@ -18787,20 +18639,84 @@
             "tags": [],
             "aliases": [],
             "icon": {
-                "material": "STONE",
-                "name": "",
+                "material": "SPECTRAL_ARROW",
+                "name": "&x&f&f&d&4&7&fRaycast to Entity",
                 "deprecatedNote": [],
-                "description": [],
+                "description": [
+                    "Shifts a location forward until",
+                    "an entity is hit and stores the hit",
+                    "entity UUID and location."
+                ],
                 "example": [],
                 "worksWith": [],
-                "additionalInfo": [],
+                "additionalInfo": [
+                    [
+                        "If the starting location is in an",
+                        "entity's hitbox, the ray will hit them."
+                    ],
+                    [
+                        "Also hits players."
+                    ]
+                ],
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 0,
-                "arguments": []
+                "arguments": [
+                    {
+                        "type": "VARIABLE",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Gets the hit entity",
+                            "UUID (or &b\"none\"&7)"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "VARIABLE",
+                        "plural": false,
+                        "optional": true,
+                        "description": [
+                            "Gets the hit (or end)",
+                            "location"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "LOCATION",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Start location"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "NUMBER",
+                        "plural": false,
+                        "optional": true,
+                        "description": [
+                            "Limit of &c500&7"
+                        ],
+                        "notes": [
+                            [
+                                "Default = &c5&7"
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "NUMBER",
+                        "plural": false,
+                        "optional": true,
+                        "description": [
+                            "Ray thickness"
+                        ],
+                        "notes": []
+                    }
+                ]
             }
         },
         {
@@ -18946,14 +18862,17 @@
             "tags": [],
             "aliases": [],
             "icon": {
-                "material": "RED_TULIP",
-                "name": "&bSet to RGB Color",
+                "material": "POPPY",
+                "name": "&bCreate RGB Color",
                 "deprecatedNote": [],
                 "description": [
                     "Creates a color hex based on red,",
                     "green, and blue channels."
                 ],
-                "example": [],
+                "example": [
+                    "&dRGBColor&7(&c255&7&7, &c255&7&7, &c255&7&7) = &b\"#FFFFFF\"&7",
+                    "&dRGBColor&7(&c0&7&7, &c125&7&7, &c0&7&7) = &b\"#007D00\"&7"
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -18971,9 +18890,6 @@
                             "Variable to set"
                         ],
                         "notes": []
-                    },
-                    {
-                        "text": ""
                     },
                     {
                         "type": "NUMBER",
@@ -19082,7 +18998,9 @@
                 "description": [
                     "Splits a text into a list of texts."
                 ],
-                "example": [],
+                "example": [
+                    "&dSplitText&7(&b\"a-b\"&7&7, &b\"-\"&7&7) = &2[&b\"a\"&7&7, &b\"b\"&7&2]"
+                ],
                 "worksWith": [],
                 "additionalInfo": [
                     [
@@ -19137,14 +19055,17 @@
             "tags": [],
             "aliases": [],
             "icon": {
-                "material": "PINK_TULIP",
-                "name": "&bSet to HSL Color",
+                "material": "AZURE_BLUET",
+                "name": "&bCreate HSL Color",
                 "deprecatedNote": [],
                 "description": [
                     "Creates a color based on hue,",
                     "saturation, and lightness."
                 ],
-                "example": [],
+                "example": [
+                    "&dHSLColor&7(&c320&7&7, &c80&7&7, &c75&7&7) = &b\"#F28CD0\"&7",
+                    "&dHSLColor&7(&c0&7&7, &c25&7&7, &c40&7&7) = &b\"#804D4D\"&7"
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -19162,9 +19083,6 @@
                             "Variable to set"
                         ],
                         "notes": []
-                    },
-                    {
-                        "text": ""
                     },
                     {
                         "type": "NUMBER",
@@ -19289,10 +19207,13 @@
             ],
             "aliases": [],
             "icon": {
-                "material": "STONE",
-                "name": "",
+                "material": "COMPASS",
+                "name": "&x&f&f&d&4&7&fGet Location Direction",
                 "deprecatedNote": [],
-                "description": [],
+                "description": [
+                    "Sets a variable to the direction",
+                    "a location is rotated in."
+                ],
                 "example": [],
                 "worksWith": [],
                 "additionalInfo": [],
@@ -19302,7 +19223,27 @@
                 "advanced": false,
                 "loadedItem": "",
                 "tags": 1,
-                "arguments": []
+                "arguments": [
+                    {
+                        "type": "VARIABLE",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Variable to set"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "LOCATION",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Location to get",
+                            "direction of"
+                        ],
+                        "notes": []
+                    }
+                ]
             }
         },
         {
@@ -19365,7 +19306,9 @@
                     "base must be raised to to get",
                     "the given input."
                 ],
-                "example": [],
+                "example": [
+                    "&dLog&7(&c2&7&7, &c8&7&7) = &c3&7"
+                ],
                 "worksWith": [],
                 "additionalInfo": [
                     [
@@ -19705,7 +19648,7 @@
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 2,
                 "arguments": [
@@ -19917,6 +19860,210 @@
                         "optional": false,
                         "description": [
                             "Item"
+                        ],
+                        "notes": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GetColorChannel",
+            "codeblockName": "SET VARIABLE",
+            "tags": [
+                {
+                    "name": "Color Channel",
+                    "options": [
+                        {
+                            "name": "Red",
+                            "icon": {
+                                "material": "RED_DYE",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": []
+                        },
+                        {
+                            "name": "Green",
+                            "icon": {
+                                "material": "LIME_DYE",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": []
+                        },
+                        {
+                            "name": "Blue",
+                            "icon": {
+                                "material": "LIGHT_BLUE_DYE",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": []
+                        },
+                        {
+                            "name": "Hue",
+                            "icon": {
+                                "material": "PINK_DYE",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": []
+                        },
+                        {
+                            "name": "HSV Saturation",
+                            "icon": {
+                                "material": "ORANGE_DYE",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": [
+                                "HSB Saturation"
+                            ]
+                        },
+                        {
+                            "name": "Value",
+                            "icon": {
+                                "material": "GRAY_DYE",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": [
+                                "HSB Brightness"
+                            ]
+                        },
+                        {
+                            "name": "HSL Saturation",
+                            "icon": {
+                                "material": "YELLOW_DYE",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": []
+                        },
+                        {
+                            "name": "Lightness",
+                            "icon": {
+                                "material": "LIGHT_GRAY_DYE",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": [
+                                "HSL Luminosity"
+                            ]
+                        }
+                    ],
+                    "defaultOption": "Red"
+                }
+            ],
+            "aliases": [],
+            "icon": {
+                "material": "WHEAT_SEEDS",
+                "name": "&cGet Color Channel",
+                "deprecatedNote": [],
+                "description": [
+                    "Gets one of a color's RGB/HSV/HSL",
+                    "number values."
+                ],
+                "example": [
+                    "&dGetColorChannel&7(&b\"#ff65B2\"&7&7, &3#Red&7&7) = &c255&7",
+                    "&dGetColorChannel&7(&b\"#ADEA1F\"&7&7, &3#Hue&7&7) = &c78&7"
+                ],
+                "worksWith": [],
+                "additionalInfo": [],
+                "requiredRank": "",
+                "requireTokens": false,
+                "requireRankAndTokens": false,
+                "advanced": true,
+                "loadedItem": "",
+                "tags": 1,
+                "arguments": [
+                    {
+                        "type": "VARIABLE",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Variable to set"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "TEXT",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Color"
                         ],
                         "notes": []
                     }
@@ -20143,7 +20290,12 @@
                     "Searches for part of a text",
                     "and replaces it."
                 ],
-                "example": [],
+                "example": [
+                    "&dReplaceText&7(&b\"Maximum\"&7, ",
+                    "&b\"ax\"&7, &b\"in\"&7) = &b\"Minimum\"",
+                    "&dReplaceText&7(&b\"MrMine05\"&7, ",
+                    "&b\"[a-z]+\"&7, &b\".\"&7) = &b\"M.M.05\""
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -20206,7 +20358,9 @@
                     "Gets the number of characters",
                     "a text has."
                 ],
-                "example": [],
+                "example": [
+                    "&eVar&7 = &dTextLength&7(&b\"K_Sasha\"&7) = &c7"
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -20415,6 +20569,66 @@
                         "description": [
                             "Effect to get",
                             "amount of"
+                        ],
+                        "notes": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "IndexValue",
+            "codeblockName": "SET VARIABLE",
+            "tags": [],
+            "aliases": [],
+            "icon": {
+                "material": "LIGHT_GRAY_DYE",
+                "name": "&x&f&f&d&4&7&fSet to Value at Index",
+                "deprecatedNote": [],
+                "description": [
+                    "Sets a variable to a value",
+                    "at an index in a set."
+                ],
+                "example": [],
+                "worksWith": [],
+                "additionalInfo": [
+                    [
+                        "If the index is outside",
+                        "the set, the first or last",
+                        "value is used."
+                    ]
+                ],
+                "requiredRank": "",
+                "requireTokens": false,
+                "requireRankAndTokens": false,
+                "advanced": false,
+                "loadedItem": "",
+                "tags": 0,
+                "arguments": [
+                    {
+                        "type": "VARIABLE",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Variable to set"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "NUMBER",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Index"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "ANY_TYPE",
+                        "plural": true,
+                        "optional": false,
+                        "description": [
+                            "Value set",
+                            "in order"
                         ],
                         "notes": []
                     }
@@ -20679,7 +20893,7 @@
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 0,
                 "arguments": [
@@ -20898,6 +21112,22 @@
                             "Z component"
                         ],
                         "notes": []
+                    },
+                    {
+                        "text": "&x&f&f&5&5&a&aOR"
+                    },
+                    {
+                        "type": "TEXT",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Direction"
+                        ],
+                        "notes": [
+                            [
+                                "Creates a unit vector"
+                            ]
+                        ]
                     }
                 ]
             }
@@ -21372,16 +21602,74 @@
         {
             "name": "GetDirection",
             "codeblockName": "SET VARIABLE",
-            "tags": [],
+            "tags": [
+                {
+                    "name": "Check Directions",
+                    "options": [
+                        {
+                            "name": "north/east/south/west/up/down",
+                            "icon": {
+                                "material": "RAIL",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": []
+                        },
+                        {
+                            "name": "north/east/south/west",
+                            "icon": {
+                                "material": "RAIL",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": []
+                        },
+                        {
+                            "name": "up/down",
+                            "icon": {
+                                "material": "LADDER",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": []
+                        }
+                    ],
+                    "defaultOption": "north/east/south/west/up/down"
+                }
+            ],
             "aliases": [],
             "icon": {
-                "material": "COMPASS",
-                "name": "&x&2&a&f&f&a&aGet Location Direction",
+                "material": "STONE",
+                "name": "",
                 "deprecatedNote": [],
-                "description": [
-                    "Gets a location's rotation",
-                    "(pitch and yaw) as a direction."
-                ],
+                "description": [],
                 "example": [],
                 "worksWith": [],
                 "additionalInfo": [],
@@ -21390,28 +21678,8 @@
                 "requireRankAndTokens": false,
                 "advanced": false,
                 "loadedItem": "",
-                "tags": 0,
-                "arguments": [
-                    {
-                        "type": "VARIABLE",
-                        "plural": false,
-                        "optional": false,
-                        "description": [
-                            "Variable to set"
-                        ],
-                        "notes": []
-                    },
-                    {
-                        "type": "LOCATION",
-                        "plural": false,
-                        "optional": false,
-                        "description": [
-                            "Location to get",
-                            "direction of"
-                        ],
-                        "notes": []
-                    }
-                ]
+                "tags": 1,
+                "arguments": []
             }
         },
         {
@@ -21427,7 +21695,9 @@
                     "Trims a text, starting and ending",
                     "at the given positions."
                 ],
-                "example": [],
+                "example": [
+                    "&dTrimText&7(&b\"Value\"&7&7, &c2&7&7, &c4&7&7) = &b\"alu\"&7"
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -21673,12 +21943,11 @@
             ],
             "aliases": [],
             "icon": {
-                "material": "PRISMARINE_BRICKS",
-                "name": "&aShift Location on Vector",
+                "material": "PRISMARINE_STAIRS",
+                "name": "&aAdd Vector to Location",
                 "deprecatedNote": [],
                 "description": [
-                    "Shifts a location along a",
-                    "vector."
+                    "Adds a vector to a location."
                 ],
                 "example": [],
                 "worksWith": [],
@@ -21686,7 +21955,7 @@
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 1,
                 "arguments": [
@@ -21718,26 +21987,11 @@
                         "notes": []
                     },
                     {
-                        "text": ""
-                    },
-                    {
                         "type": "NUMBER",
                         "plural": false,
-                        "optional": false,
+                        "optional": true,
                         "description": [
                             "Shift distance"
-                        ],
-                        "notes": []
-                    },
-                    {
-                        "text": "&x&f&f&5&5&a&aOR"
-                    },
-                    {
-                        "type": "NONE",
-                        "plural": false,
-                        "optional": false,
-                        "description": [
-                            "Adds full vector&7)"
                         ],
                         "notes": []
                     }
@@ -22517,13 +22771,12 @@
             "tags": [],
             "aliases": [],
             "icon": {
-                "material": "ICE",
+                "material": "PRISMARINE_STAIRS",
                 "name": "&x&2&a&f&f&a&aReflect Vector",
                 "deprecatedNote": [],
                 "description": [
-                    "Reflects a vector off a",
-                    "surface defined by another",
-                    "vector."
+                    "Reflects a vector about",
+                    "a given normal vector."
                 ],
                 "example": [],
                 "worksWith": [],
@@ -22531,7 +22784,7 @@
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 0,
                 "arguments": [
@@ -22549,7 +22802,7 @@
                         "plural": false,
                         "optional": true,
                         "description": [
-                            "Vector to reflect"
+                            "Initial vector"
                         ],
                         "notes": []
                     },
@@ -22558,7 +22811,7 @@
                         "plural": false,
                         "optional": false,
                         "description": [
-                            "Surface vector"
+                            "Normal vector"
                         ],
                         "notes": []
                     }
@@ -22739,176 +22992,6 @@
                         "description": [
                             "Item to get maximum stack",
                             "size of"
-                        ],
-                        "notes": []
-                    }
-                ]
-            }
-        },
-        {
-            "name": "GetColorChannels",
-            "codeblockName": "SET VARIABLE",
-            "tags": [
-                {
-                    "name": "Color Channels",
-                    "options": [
-                        {
-                            "name": "RGB",
-                            "icon": {
-                                "material": "RED_DYE",
-                                "name": "",
-                                "deprecatedNote": [],
-                                "description": [
-                                    "1. Red (&c0&7 - &c255&7)",
-                                    "2. Green (&c0&7 - &c255&7)",
-                                    "3. Blue (&c0&7 - &c255&7)"
-                                ],
-                                "example": [],
-                                "worksWith": [],
-                                "additionalInfo": [],
-                                "requiredRank": "",
-                                "requireTokens": false,
-                                "requireRankAndTokens": false,
-                                "advanced": false,
-                                "loadedItem": ""
-                            },
-                            "aliases": []
-                        },
-                        {
-                            "name": "HSB",
-                            "icon": {
-                                "material": "ORANGE_DYE",
-                                "name": "",
-                                "deprecatedNote": [],
-                                "description": [
-                                    "1. Hue (&c0.0&7 - &c360.0&7)",
-                                    "2. Saturation (&c0.0&7 - &c100.0&7)",
-                                    "3. Brightness (&c0.0&7 - &c100.0&7)"
-                                ],
-                                "example": [],
-                                "worksWith": [],
-                                "additionalInfo": [],
-                                "requiredRank": "",
-                                "requireTokens": false,
-                                "requireRankAndTokens": false,
-                                "advanced": false,
-                                "loadedItem": ""
-                            },
-                            "aliases": []
-                        },
-                        {
-                            "name": "HSL",
-                            "icon": {
-                                "material": "PINK_DYE",
-                                "name": "",
-                                "deprecatedNote": [],
-                                "description": [
-                                    "1. Hue (&c0.0&7 - &c360.0&7)",
-                                    "2. Saturation (&c0.0&7 - &c100.0&7)",
-                                    "3. Lightness (&c0.0&7 - &c100.0&7)"
-                                ],
-                                "example": [],
-                                "worksWith": [],
-                                "additionalInfo": [],
-                                "requiredRank": "",
-                                "requireTokens": false,
-                                "requireRankAndTokens": false,
-                                "advanced": false,
-                                "loadedItem": ""
-                            },
-                            "aliases": []
-                        }
-                    ],
-                    "defaultOption": "RGB"
-                }
-            ],
-            "aliases": [],
-            "icon": {
-                "material": "WHEAT_SEEDS",
-                "name": "&2Get Color Channels",
-                "deprecatedNote": [],
-                "description": [
-                    "Gets a color's RGB/HSB/HSL",
-                    "number values as a list."
-                ],
-                "example": [],
-                "worksWith": [],
-                "additionalInfo": [],
-                "requiredRank": "",
-                "requireTokens": false,
-                "requireRankAndTokens": false,
-                "advanced": true,
-                "loadedItem": "",
-                "tags": 1,
-                "arguments": [
-                    {
-                        "type": "VARIABLE",
-                        "plural": false,
-                        "optional": false,
-                        "description": [
-                            "Variable to set"
-                        ],
-                        "notes": []
-                    },
-                    {
-                        "type": "TEXT",
-                        "plural": false,
-                        "optional": false,
-                        "description": [
-                            "Color"
-                        ],
-                        "notes": []
-                    }
-                ]
-            }
-        },
-        {
-            "name": " SetDirection ",
-            "codeblockName": "SET VARIABLE",
-            "tags": [],
-            "aliases": [],
-            "icon": {
-                "material": "COMPASS",
-                "name": "&aSet Location Direction",
-                "deprecatedNote": [],
-                "description": [
-                    "Sets a location's rotation",
-                    "(pitch and yaw) to a direction."
-                ],
-                "example": [],
-                "worksWith": [],
-                "additionalInfo": [],
-                "requiredRank": "",
-                "requireTokens": false,
-                "requireRankAndTokens": false,
-                "advanced": false,
-                "loadedItem": "",
-                "tags": 0,
-                "arguments": [
-                    {
-                        "type": "VARIABLE",
-                        "plural": false,
-                        "optional": false,
-                        "description": [
-                            "Variable to set"
-                        ],
-                        "notes": []
-                    },
-                    {
-                        "type": "LOCATION",
-                        "plural": false,
-                        "optional": true,
-                        "description": [
-                            "Location to change"
-                        ],
-                        "notes": []
-                    },
-                    {
-                        "type": "VECTOR",
-                        "plural": false,
-                        "optional": false,
-                        "description": [
-                            "Direction"
                         ],
                         "notes": []
                     }
@@ -23471,7 +23554,10 @@
                     "Sets a variable to a text, or combines",
                     "multiple values into one text."
                 ],
-                "example": [],
+                "example": [
+                    "&eVar&7 = &b\"Diamond\"&7 + &b\"Fire\"&7 = &b\"DiamondFire\"",
+                    "&eVar&7 = &b\"Cgodess\"&7 + &c45&7 = &b\"Cgodess45\""
+                ],
                 "worksWith": [],
                 "additionalInfo": [
                     [
@@ -23706,10 +23792,13 @@
                 "FaceDirection"
             ],
             "icon": {
-                "material": "STONE",
-                "name": "",
+                "material": "COMPASS",
+                "name": "&aSet Location Direction",
                 "deprecatedNote": [],
-                "description": [],
+                "description": [
+                    "Rotates a location to face a",
+                    "direction."
+                ],
                 "example": [],
                 "worksWith": [],
                 "additionalInfo": [],
@@ -23719,33 +23808,6 @@
                 "advanced": false,
                 "loadedItem": "",
                 "tags": 1,
-                "arguments": []
-            }
-        },
-        {
-            "name": "HSBColor",
-            "codeblockName": "SET VARIABLE",
-            "tags": [],
-            "aliases": [
-                "HSVColor"
-            ],
-            "icon": {
-                "material": "ORANGE_TULIP",
-                "name": "&bSet to HSB Color",
-                "deprecatedNote": [],
-                "description": [
-                    "Creates a color based on hue,",
-                    "saturation, and brightness."
-                ],
-                "example": [],
-                "worksWith": [],
-                "additionalInfo": [],
-                "requiredRank": "",
-                "requireTokens": false,
-                "requireRankAndTokens": false,
-                "advanced": true,
-                "loadedItem": "",
-                "tags": 0,
                 "arguments": [
                     {
                         "type": "VARIABLE",
@@ -23757,40 +23819,28 @@
                         "notes": []
                     },
                     {
-                        "text": ""
-                    },
-                    {
-                        "type": "NUMBER",
+                        "type": "LOCATION",
                         "plural": false,
-                        "optional": false,
+                        "optional": true,
                         "description": [
-                            "Hue (Color circle, &c0&7-&c360&7)"
+                            "Location to change"
                         ],
                         "notes": []
                     },
                     {
-                        "type": "NUMBER",
-                        "plural": false,
-                        "optional": true,
-                        "description": [
-                            "Saturation (&c0&7-&c100&7)"
-                        ],
-                        "notes": [
-                            [
-                                "Default = &c100&7"
-                            ]
-                        ]
+                        "text": ""
                     },
                     {
-                        "type": "NUMBER",
+                        "type": "TEXT",
                         "plural": false,
-                        "optional": true,
+                        "optional": false,
                         "description": [
-                            "Brightness (&c0&7-&c100&7)"
+                            "Direction"
                         ],
                         "notes": [
                             [
-                                "Default = &c100&7"
+                                "&b\"north\"&7&7, &b\"south\"&7&7, &b\"east\"&7&7, ",
+                                "&b\"west\"&7&7, &b\"up\"&7&7, &b\"down\"&7"
                             ]
                         ]
                     },
@@ -23798,13 +23848,16 @@
                         "text": "&x&f&f&5&5&a&aOR"
                     },
                     {
-                        "type": "LIST",
+                        "type": "VECTOR",
                         "plural": false,
                         "optional": false,
                         "description": [
-                            "H, S, B values"
+                            "Direction"
                         ],
                         "notes": []
+                    },
+                    {
+                        "text": ""
                     }
                 ]
             }
@@ -23822,7 +23875,9 @@
                     "Increments a number variable",
                     "by 1 or more other numbers."
                 ],
-                "example": [],
+                "example": [
+                    "&eVar&7 = &eVar&7 + &c3&7"
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -24180,7 +24235,7 @@
             ],
             "aliases": [],
             "icon": {
-                "material": "MAP",
+                "material": "FILLED_MAP",
                 "name": "&aSet Location Coordinate",
                 "deprecatedNote": [],
                 "description": [
@@ -24403,20 +24458,77 @@
             ],
             "aliases": [],
             "icon": {
-                "material": "STONE",
-                "name": "",
+                "material": "ARROW",
+                "name": "&x&f&f&d&4&7&fRaycast to Block",
                 "deprecatedNote": [],
-                "description": [],
+                "description": [
+                    "Shifts a location forward until",
+                    "a block is hit and stores the hit",
+                    "location and face."
+                ],
                 "example": [],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 2,
-                "arguments": []
+                "arguments": [
+                    {
+                        "type": "VARIABLE",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Gets the hit block",
+                            "location (or &b\"none\"&7)"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "VARIABLE",
+                        "plural": false,
+                        "optional": true,
+                        "description": [
+                            "Gets the hit block",
+                            "face (or &b\"none\"&7)"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "VARIABLE",
+                        "plural": false,
+                        "optional": true,
+                        "description": [
+                            "Gets the exact hit",
+                            "(or end) location"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "LOCATION",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Start location"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "NUMBER",
+                        "plural": false,
+                        "optional": true,
+                        "description": [
+                            "Limit of &c500&7"
+                        ],
+                        "notes": [
+                            [
+                                "Default = &c5&7"
+                            ]
+                        ]
+                    }
+                ]
             }
         },
         {
@@ -24988,7 +25100,7 @@
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
-                "advanced": false,
+                "advanced": true,
                 "loadedItem": "",
                 "tags": 0,
                 "arguments": [
@@ -26062,7 +26174,9 @@
                     "Decrements a number variable",
                     "by 1 or more other numbers."
                 ],
-                "example": [],
+                "example": [
+                    "&eVar&7 = &eVar&7 - &c1&7"
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -26341,7 +26455,7 @@
                 "ShiftLocTowards"
             ],
             "icon": {
-                "material": "TARGET",
+                "material": "SLIME_BLOCK",
                 "name": "&aShift Location Toward Location",
                 "deprecatedNote": [],
                 "description": [
@@ -26546,7 +26660,7 @@
                     {
                         "type": "TEXT",
                         "plural": false,
-                        "optional": true,
+                        "optional": false,
                         "description": [
                             "Text to change"
                         ],
@@ -26844,7 +26958,9 @@
                     "numerical equivalent of a",
                     "text, if possible."
                 ],
-                "example": [],
+                "example": [
+                    "&dParseNumber&7(&b\"7\"&7&7) = &c7&7"
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -27364,7 +27480,9 @@
                     "a minimum and maximum value, and",
                     "if not, sets it to the nearest."
                 ],
-                "example": [],
+                "example": [
+                    "&dClampNumber&7(&c17&7&7, &c25&7&7, &c75&7&7) = &c25&7"
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -27501,7 +27619,9 @@
                     "Rounds a number to a whole",
                     "number or multiple."
                 ],
-                "example": [],
+                "example": [
+                    "&dRound&7(&c12.34&7&7, &c5&7&7) = &c10&7"
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -27804,7 +27924,9 @@
                     "&b\"&\"&7 or hex format to functional",
                     "color codes, or vice versa."
                 ],
-                "example": [],
+                "example": [
+                    "&dTranslateColors&7(&b\"&mtext\"&7) = &b\"&mtext&b\""
+                ],
                 "worksWith": [],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -28089,6 +28211,93 @@
                         "optional": false,
                         "description": [
                             "Placeable blocks"
+                        ],
+                        "notes": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "HSVColor",
+            "codeblockName": "SET VARIABLE",
+            "tags": [],
+            "aliases": [
+                "HSBColor"
+            ],
+            "icon": {
+                "material": "DANDELION",
+                "name": "&bCreate HSV Color",
+                "deprecatedNote": [],
+                "description": [
+                    "Creates a color based on hue,",
+                    "saturation, and value/brightness."
+                ],
+                "example": [
+                    "&dHSBColor&7(&c320&7&7, &c80&7&7, &c75&7&7) = &b\"#BF268C\"&7",
+                    "&dHSBColor&7(&c0&7&7, &c25&7&7, &c40&7&7) = &b\"#550080\"&7"
+                ],
+                "worksWith": [],
+                "additionalInfo": [],
+                "requiredRank": "",
+                "requireTokens": false,
+                "requireRankAndTokens": false,
+                "advanced": true,
+                "loadedItem": "",
+                "tags": 0,
+                "arguments": [
+                    {
+                        "type": "VARIABLE",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Variable to set"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "NUMBER",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "Hue (Color circle, &c0&7-&c360&7)"
+                        ],
+                        "notes": []
+                    },
+                    {
+                        "type": "NUMBER",
+                        "plural": false,
+                        "optional": true,
+                        "description": [
+                            "Saturation (&c0&7-&c100&7)"
+                        ],
+                        "notes": [
+                            [
+                                "Default = &c100&7"
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "NUMBER",
+                        "plural": false,
+                        "optional": true,
+                        "description": [
+                            "Value (&c0&7-&c100&7)"
+                        ],
+                        "notes": [
+                            [
+                                "Default = &c100&7"
+                            ]
+                        ]
+                    },
+                    {
+                        "text": "&x&f&f&5&5&a&aOR"
+                    },
+                    {
+                        "type": "LIST",
+                        "plural": false,
+                        "optional": false,
+                        "description": [
+                            "H, S, B values"
                         ],
                         "notes": []
                     }
@@ -28490,7 +28699,7 @@
                 "deprecatedNote": [],
                 "description": [
                     "Checks if an entity",
-                    "is a boat or minecart."
+                    "is a vehicle."
                 ],
                 "example": [],
                 "worksWith": [],
@@ -35158,6 +35367,93 @@
             }
         },
         {
+            "name": "SetPufferfishSize",
+            "codeblockName": "ENTITY ACTION",
+            "tags": [
+                {
+                    "name": "Inflation Level",
+                    "options": [
+                        {
+                            "name": "Deflated",
+                            "icon": {
+                                "material": "IRON_NUGGET",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": []
+                        },
+                        {
+                            "name": "Partially inflated",
+                            "icon": {
+                                "material": "IRON_INGOT",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": []
+                        },
+                        {
+                            "name": "Fully inflated",
+                            "icon": {
+                                "material": "IRON_BLOCK",
+                                "name": "",
+                                "deprecatedNote": [],
+                                "description": [],
+                                "example": [],
+                                "worksWith": [],
+                                "additionalInfo": [],
+                                "requiredRank": "",
+                                "requireTokens": false,
+                                "requireRankAndTokens": false,
+                                "advanced": false,
+                                "loadedItem": ""
+                            },
+                            "aliases": []
+                        }
+                    ],
+                    "defaultOption": "Deflated"
+                }
+            ],
+            "aliases": [],
+            "icon": {
+                "material": "PUFFERFISH",
+                "name": "&6Set Pufferfish Size",
+                "deprecatedNote": [],
+                "description": [
+                    "Sets a pufferfish's inflation level."
+                ],
+                "example": [],
+                "worksWith": [
+                    "Pufferfish"
+                ],
+                "additionalInfo": [],
+                "requiredRank": "Noble",
+                "requireTokens": false,
+                "requireRankAndTokens": false,
+                "advanced": false,
+                "loadedItem": "",
+                "tags": 1,
+                "arguments": []
+            }
+        },
+        {
             "name": "L SetArmor",
             "codeblockName": "ENTITY ACTION",
             "tags": [],
@@ -38622,8 +38918,7 @@
                 "worksWith": [
                     "Slime",
                     "Magma Cube",
-                    "Phantom",
-                    "Pufferfish"
+                    "Phantom"
                 ],
                 "additionalInfo": [],
                 "requiredRank": "",
@@ -41161,6 +41456,47 @@
             }
         },
         {
+            "name": "RandomMob",
+            "codeblockName": "SELECT OBJECT",
+            "tags": [],
+            "aliases": [],
+            "icon": {
+                "material": "PLAYER_HEAD",
+                "name": "&eSelect Random Mob",
+                "head": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWMzY2VjNjg3NjlmZTljOTcxMjkxZWRiN2VmOTZhNGUzYjYwNDYyY2ZkNWZiNWJhYTFjYmIzYTcxNTEzZTdiIn19fQ==",
+                "deprecatedNote": [],
+                "description": [
+                    "Creates a selection using",
+                    "one or more random mobs",
+                    "in the game."
+                ],
+                "example": [],
+                "worksWith": [],
+                "additionalInfo": [],
+                "requiredRank": "",
+                "requireTokens": false,
+                "requireRankAndTokens": false,
+                "advanced": false,
+                "loadedItem": "",
+                "tags": 0,
+                "arguments": [
+                    {
+                        "type": "NUMBER",
+                        "plural": false,
+                        "optional": true,
+                        "description": [
+                            "Selection size"
+                        ],
+                        "notes": [
+                            [
+                                "Default = &c1&7"
+                            ]
+                        ]
+                    }
+                ]
+            }
+        },
+        {
             "name": "AllMobs",
             "codeblockName": "SELECT OBJECT",
             "tags": [],
@@ -41524,177 +41860,6 @@
                             "compare to"
                         ],
                         "notes": []
-                    },
-                    {
-                        "type": "NUMBER",
-                        "plural": false,
-                        "optional": true,
-                        "description": [
-                            "Selection size"
-                        ],
-                        "notes": [
-                            [
-                                "Default = &c1&7"
-                            ]
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "name": "FilterRay",
-            "codeblockName": "SELECT OBJECT",
-            "tags": [
-                {
-                    "name": "Block Collision",
-                    "options": [
-                        {
-                            "name": "All blocks",
-                            "icon": {
-                                "material": "STONE_BRICKS",
-                                "name": "",
-                                "deprecatedNote": [],
-                                "description": [
-                                    "Passes through air only."
-                                ],
-                                "example": [],
-                                "worksWith": [],
-                                "additionalInfo": [],
-                                "requiredRank": "",
-                                "requireTokens": false,
-                                "requireRankAndTokens": false,
-                                "advanced": false,
-                                "loadedItem": ""
-                            },
-                            "aliases": []
-                        },
-                        {
-                            "name": "Non-fluid blocks",
-                            "icon": {
-                                "material": "WATER_BUCKET",
-                                "name": "",
-                                "deprecatedNote": [],
-                                "description": [
-                                    "Passes through fluids",
-                                    "(water and lava)."
-                                ],
-                                "example": [],
-                                "worksWith": [],
-                                "additionalInfo": [],
-                                "requiredRank": "",
-                                "requireTokens": false,
-                                "requireRankAndTokens": false,
-                                "advanced": false,
-                                "loadedItem": ""
-                            },
-                            "aliases": []
-                        },
-                        {
-                            "name": "Solid blocks",
-                            "icon": {
-                                "material": "TALL_GRASS",
-                                "name": "",
-                                "deprecatedNote": [],
-                                "description": [
-                                    "Passes through non-solid",
-                                    "blocks such as tall grass,",
-                                    "and through fluids."
-                                ],
-                                "example": [],
-                                "worksWith": [],
-                                "additionalInfo": [],
-                                "requiredRank": "",
-                                "requireTokens": false,
-                                "requireRankAndTokens": false,
-                                "advanced": false,
-                                "loadedItem": ""
-                            },
-                            "aliases": []
-                        },
-                        {
-                            "name": "None",
-                            "icon": {
-                                "material": "FEATHER",
-                                "name": "",
-                                "deprecatedNote": [],
-                                "description": [
-                                    "Passes through all blocks."
-                                ],
-                                "example": [],
-                                "worksWith": [],
-                                "additionalInfo": [],
-                                "requiredRank": "",
-                                "requireTokens": false,
-                                "requireRankAndTokens": false,
-                                "advanced": false,
-                                "loadedItem": ""
-                            },
-                            "aliases": []
-                        }
-                    ],
-                    "defaultOption": "Solid blocks"
-                }
-            ],
-            "aliases": [],
-            "icon": {
-                "material": "BLAZE_ROD",
-                "name": "&x&0&0&d&4&a&aFilter Selection by Raycast",
-                "deprecatedNote": [],
-                "description": [
-                    "Filters the selected objects",
-                    "to the objects that intersect",
-                    "a ray."
-                ],
-                "example": [],
-                "worksWith": [],
-                "additionalInfo": [],
-                "requiredRank": "",
-                "requireTokens": false,
-                "requireRankAndTokens": false,
-                "advanced": false,
-                "loadedItem": "",
-                "tags": 1,
-                "arguments": [
-                    {
-                        "type": "VARIABLE",
-                        "plural": false,
-                        "optional": true,
-                        "description": [
-                            "Gets the end or",
-                            "final hit &alocation"
-                        ],
-                        "notes": []
-                    },
-                    {
-                        "type": "LOCATION",
-                        "plural": false,
-                        "optional": false,
-                        "description": [
-                            "Ray origin"
-                        ],
-                        "notes": []
-                    },
-                    {
-                        "type": "NUMBER",
-                        "plural": false,
-                        "optional": false,
-                        "description": [
-                            "Ray distance"
-                        ],
-                        "notes": []
-                    },
-                    {
-                        "type": "NUMBER",
-                        "plural": false,
-                        "optional": true,
-                        "description": [
-                            "Ray width"
-                        ],
-                        "notes": [
-                            [
-                                "Default = &c0.0&7"
-                            ]
-                        ]
                     },
                     {
                         "type": "NUMBER",
@@ -42092,6 +42257,41 @@
             },
             "subActionBlocks": [
                 "if_player",
+                "if_entity",
+                "if_var",
+                "if_game"
+            ]
+        },
+        {
+            "name": "MobsCond",
+            "codeblockName": "SELECT OBJECT",
+            "tags": [],
+            "aliases": [],
+            "icon": {
+                "material": "SOUL_SAND",
+                "name": "&dSelect Mobs by Condition",
+                "deprecatedNote": [],
+                "description": [
+                    "Creates a selection of",
+                    "all entities in the game",
+                    "that are mobs and meet",
+                    "a condition."
+                ],
+                "example": [],
+                "worksWith": [],
+                "additionalInfo": [
+                    [
+                        "Can be inverted with the",
+                        "NOT Arrow."
+                    ]
+                ],
+                "requiredRank": "",
+                "requireTokens": false,
+                "requireRankAndTokens": false,
+                "advanced": false,
+                "loadedItem": ""
+            },
+            "subActionBlocks": [
                 "if_entity",
                 "if_var",
                 "if_game"
@@ -50887,8 +51087,7 @@
                 "loadedItem": "",
                 "returnType": "LOCATION",
                 "returnDescription": [
-                    "Center of block,",
-                    "rotated to target side"
+                    "Center of block"
                 ]
             }
         },
@@ -50896,10 +51095,14 @@
             "aliases": [],
             "category": "Locational Values",
             "icon": {
-                "material": "STONE",
+                "material": "BLUE_STAINED_GLASS",
                 "name": "&aTarget Fluid Location",
                 "deprecatedNote": [],
-                "description": [],
+                "description": [
+                    "Gets the location of the",
+                    "block a target is looking",
+                    "at, also detecting fluids."
+                ],
                 "example": [],
                 "worksWith": [],
                 "additionalInfo": [],
@@ -50907,25 +51110,45 @@
                 "requireTokens": false,
                 "requireRankAndTokens": false,
                 "advanced": false,
-                "loadedItem": ""
+                "loadedItem": "",
+                "returnType": "LOCATION",
+                "returnDescription": [
+                    "Center of",
+                    "block"
+                ]
             }
         },
         {
             "aliases": [],
             "category": "Locational Values",
             "icon": {
-                "material": "STONE",
+                "material": "SPRUCE_STAIRS",
                 "name": "&bTarget Block Face",
                 "deprecatedNote": [],
-                "description": [],
+                "description": [
+                    "Gets the block face a",
+                    "target is looking at."
+                ],
                 "example": [],
                 "worksWith": [],
-                "additionalInfo": [],
+                "additionalInfo": [
+                    [
+                        "Returns &b\"none\"&7 if the",
+                        "target is not looking",
+                        "at a block."
+                    ]
+                ],
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
                 "advanced": false,
-                "loadedItem": ""
+                "loadedItem": "",
+                "returnType": "TEXT",
+                "returnDescription": [
+                    "Block Face:",
+                    "&b\"up\"&7&7, &b\"down\"&7&7, &b\"north\"&7&7, &b\"east\"&7&7, ",
+                    "&b\"south\"&7&7, &b\"west\"&7&7, &b\"none\"&7"
+                ]
             }
         },
         {
@@ -51102,13 +51325,18 @@
             }
         },
         {
-            "aliases": [],
+            "aliases": [
+                "Facing Direction"
+            ],
             "category": "Locational Values",
             "icon": {
-                "material": "STONE",
+                "material": "COMPASS",
                 "name": "&bCardinal Direction",
                 "deprecatedNote": [],
-                "description": [],
+                "description": [
+                    "Gets the direction a target is",
+                    "looking in."
+                ],
                 "example": [],
                 "worksWith": [],
                 "additionalInfo": [],
@@ -51116,7 +51344,12 @@
                 "requireTokens": false,
                 "requireRankAndTokens": false,
                 "advanced": false,
-                "loadedItem": ""
+                "loadedItem": "",
+                "returnType": "TEXT",
+                "returnDescription": [
+                    "Cardinal Direction:",
+                    "&b\"north\"&7&7, &b\"east\"&7&7, &b\"south\"&7&7, &b\"west\"&7"
+                ]
             }
         },
         {
@@ -51179,33 +51412,6 @@
                 "returnType": "VECTOR",
                 "returnDescription": [
                     "Movement velocity"
-                ]
-            }
-        },
-        {
-            "aliases": [],
-            "category": "Locational Values",
-            "icon": {
-                "material": "PRISMARINE_SHARD",
-                "name": "&x&2&a&f&f&a&aDirection",
-                "deprecatedNote": [],
-                "description": [
-                    "Gets the looking direction",
-                    "of a target's location as",
-                    "a vector."
-                ],
-                "example": [],
-                "worksWith": [],
-                "additionalInfo": [],
-                "requiredRank": "",
-                "requireTokens": false,
-                "requireRankAndTokens": false,
-                "advanced": false,
-                "loadedItem": "",
-                "returnType": "VECTOR",
-                "returnDescription": [
-                    "Direction vector",
-                    "(length of &c1.0&7)"
                 ]
             }
         },
@@ -51748,27 +51954,39 @@
                 "loadedItem": "",
                 "returnType": "LOCATION",
                 "returnDescription": [
-                    "Center of block,",
-                    "rotated to event side"
+                    "Center of block"
                 ]
             }
         },
         {
             "aliases": [],
-            "category": "Locational Values",
+            "category": "Event Values",
             "icon": {
-                "material": "STONE",
+                "material": "QUARTZ_STAIRS",
                 "name": "&bEvent Block Face",
                 "deprecatedNote": [],
-                "description": [],
+                "description": [
+                    "Gets the side of the block",
+                    "at which this event occurred."
+                ],
                 "example": [],
-                "worksWith": [],
+                "worksWith": [
+                    "Right/Left Click Event",
+                    "Place/Break Block Event",
+                    "Projectile Hit Event"
+                ],
                 "additionalInfo": [],
                 "requiredRank": "",
                 "requireTokens": false,
                 "requireRankAndTokens": false,
                 "advanced": false,
-                "loadedItem": ""
+                "loadedItem": "",
+                "returnType": "TEXT",
+                "returnDescription": [
+                    "Block Face:",
+                    "&b\"up\"&7&7, &b\"down\"&7&7, &b\"north\"&7&7, &b\"east\"&7&7, ",
+                    "&b\"south\"&7&7, &b\"west\"&7&7, &b\"none\"&7"
+                ]
             }
         },
         {
@@ -52273,6 +52491,68 @@
                     "&b\"cast\"&7&7, &b\"bite\"&7&7, &b\"catch\"&7&7, ",
                     "&b\"cancel\"&7&7, &b\"cancel_block\"&7&7, ",
                     "&b\"miss\"&7&7, &b\"pull_entity\"&7"
+                ]
+            }
+        },
+        {
+            "aliases": [],
+            "category": "Event Values",
+            "icon": {
+                "material": "TROPICAL_FISH_BUCKET",
+                "name": "&bEvent Resource Pack Status",
+                "deprecatedNote": [],
+                "description": [
+                    "Gets the status of the resource",
+                    "pack in this event."
+                ],
+                "example": [],
+                "worksWith": [
+                    "Resource Pack Status Event"
+                ],
+                "additionalInfo": [],
+                "requiredRank": "",
+                "requireTokens": false,
+                "requireRankAndTokens": false,
+                "advanced": false,
+                "loadedItem": "",
+                "returnType": "TEXT",
+                "returnDescription": [
+                    "Resource Pack Status:",
+                    "accepted",
+                    "declined",
+                    "failed_download",
+                    "successfully_loaded"
+                ]
+            }
+        },
+        {
+            "aliases": [],
+            "category": "Event Values",
+            "icon": {
+                "material": "ENDER_PEARL",
+                "name": "&aEvent Teleport Cause",
+                "deprecatedNote": [],
+                "description": [
+                    "Gets the cause of teleportation",
+                    "in player teleport events."
+                ],
+                "example": [],
+                "worksWith": [
+                    "Player Teleport Event",
+                    "Player Use Portal Event"
+                ],
+                "additionalInfo": [],
+                "requiredRank": "",
+                "requireTokens": false,
+                "requireRankAndTokens": false,
+                "advanced": false,
+                "loadedItem": "",
+                "returnType": "TEXT",
+                "returnDescription": [
+                    "Teleport Cause:",
+                    "&b\"chorus_fruit\"&7&7, &b\"end_gateway\"&7&7, ",
+                    "&b\"end_portal\"&7&7, &b\"ender_pearl\"&7&7, ",
+                    "&b\"nether_portal\"&7&7, &b\"spectate\"&7&7, "
                 ]
             }
         },
