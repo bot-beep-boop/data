@@ -1,6 +1,6 @@
 {
   "player": "Tomoli75",
   "cape": "duck.png",
-  "hat": null,
+  "hat": "headphones.json",
   "dev": "False"
 }
