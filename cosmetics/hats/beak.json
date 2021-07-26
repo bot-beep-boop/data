@@ -119,5 +119,8 @@
 			"translation": [0, 10.13, -6.25],
 			"scale": [1.68, 1.68, 1.68]
 		}
+	},
+	"attributes": {
+		"type": "head"
 	}
 }
