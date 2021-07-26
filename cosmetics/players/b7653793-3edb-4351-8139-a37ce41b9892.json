@@ -1,6 +1,6 @@
 {
   "player": "Tomoli75",
   "cape": "duck.png",
-  "hat": null,
+  "hat": "apple_hat.json",
   "dev": "False"
 }
