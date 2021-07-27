@@ -1,6 +1,5 @@
 {
   "player": "Vatten",
-  "cape": "yea.png",
-  "hat": "beak.json",
-  "dev": "True"
+  "cape": "developer_cape.png",
+  "hat": null,
 }
