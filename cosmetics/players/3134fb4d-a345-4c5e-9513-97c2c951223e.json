@@ -1,6 +1,5 @@
 {
   "player": "RyanLand",
-  "cape": "ryanland_cape.png",
-  "hat": "top_hat.json",
-  "dev": "True"
+  "cape": "developer_cape.png",
+  "hat": null,
 }
