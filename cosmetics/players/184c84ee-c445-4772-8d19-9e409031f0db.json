@@ -1,6 +1,5 @@
 {
   "player": "BlazeMCworld",
-  "cape": null,
+  "cape": "developer_cape.png",
   "hat": null,
-  "dev": "True"
 }
