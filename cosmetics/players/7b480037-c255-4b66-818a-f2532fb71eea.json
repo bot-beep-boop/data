@@ -1,6 +1,5 @@
 {
   "player": "KabanFriends",
-  "cape": "kabanfriends_cape_fumo_2.png",
-  "hat": "reimu.json",
-  "dev": "True"
+  "cape": "developer_cape.png",
+  "hat": null,
 }
