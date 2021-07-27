@@ -1,6 +1,5 @@
 {
   "player": "TechStreet",
   "cape": "techstreet_cape.png",
-  "hat": "top_hat.json",
-  "dev": "True"
+  "hat": null,
 }
