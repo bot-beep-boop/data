@@ -23,6 +23,10 @@
             "id": "Vector",
             "color": "§x§2§a§f§f§a§a"
         },
+        "DICT": {
+             "id": "Dictionary",
+             "color": "§x§5§5§a§a§f§f"
+        },
         "NONE": {
             "id": "None",
             "color": "§x§8§0§8§0§8§0"
